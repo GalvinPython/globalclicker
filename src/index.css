@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.odometer {
+  /* background-color: aqua; */
+  min-width: 90vw;
+  font-size: 10vw;
+}

@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import newLogo from './logoNew.svg'
 import './App.css';
 import Odometer from 'react-odometerjs'
 import { useEffect, useState } from 'react';
@@ -41,14 +40,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <img src={newLogo} className="App-logo" alt="Indicating a mouse cursor"/>
+        <img src={logo} className="App-logo" alt="logo" />
         <p>Global Clicker By: <code>GalvinPython</code></p>
         <div className='Odometer'>
           <Odometer value={value} format='(,ddd),dd' style={{ fontWeight: "bold", whiteSpace: "nowrap", overflow: "hidden" }} title='Clicks / Count'/>
         </div>
         <button onClick={sendReq}>+1 Click</button>
-        <small title='This is a beta version to test everything works. Compiled on 21st June 2023'>Version 0.1-20230621 (BETA)</small>
+        <small title='This is a beta version to test everything works. Compiled on 1st July 2023'>Version 0.2-20230701 (BETA)</small>
       </header>
     </div>
   );

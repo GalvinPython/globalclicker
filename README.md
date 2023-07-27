@@ -7,7 +7,7 @@ There are currently only two supported endpoints, however more are to be develop
 * /clicked - Add another number to the clicks total **(GET)**
   * This is a GET request as post requests were bugging, and a GET request was the first way to getting it worked properly  
 
-**Look at `sample/readme.md` for sample API code**
+<!-- **Look at `sample/readme.md` for sample API code** -->
 
 # Changelog
 Note: Backend code isn't available, however changes are documented

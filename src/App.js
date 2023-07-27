@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Odometer from 'react-odometerjs'
 import { useEffect, useState } from 'react';
 
@@ -7,12 +7,12 @@ function App() {
   const [value, setValue] = useState()
   useEffect(() => {
     let rows;
+    console.log("Script running!")
     const interval = setInterval(() => {
-      console.log("Test")
       fetch('https://api-gc.galvindev.me.uk/clicks', {method: 'GET'})
       .then(function(response) {
       if(response.ok) return response.json();
-      throw new Error('Request failed.');
+        throw new Error('Request failed.');
       })
       .then(function(data) {
         rows = data[0].row_count
@@ -22,10 +22,10 @@ function App() {
       });
 
       setValue(rows)
-    }, 1000)
-
+    }, 2000)
     return () => clearInterval(interval)
   }, [])
+
   function sendReq() {
     fetch('https://api-gc.galvindev.me.uk/clicked')
     .then(function(response) {
@@ -37,6 +37,13 @@ function App() {
     })
   }
 
+  // Needed for outlinks
+  const Anchor = props => {
+    return (
+      <a href='https://github.com/galvinpython/globalclicker'>{props.children}</a>
+    )
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -46,7 +53,7 @@ function App() {
           <Odometer value={value} format='(,ddd),dd' style={{ fontWeight: "bold", whiteSpace: "nowrap", overflow: "hidden" }} title='Clicks / Count'/>
         </div>
         <button onClick={sendReq}>+1 Click</button>
-        <small title='This is a beta version to test everything works. Compiled on 1st July 2023'>Version 0.2-20230701 (BETA)</small>
+        <small title='This is a beta version to test everything works. Compiled on 26th July 2023'>Version 0.3-20230726 (BETA) | <Anchor>View Source</Anchor></small>
       </header>
     </div>
   );

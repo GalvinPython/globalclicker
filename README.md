@@ -5,13 +5,25 @@
 There are currently only two supported endpoints, however more are to be developed:
 * /clicks - Get the number of clicks **(GET)**
 * /clicked - Add another number to the clicks total **(GET)**
-  * This is a GET request as post requests were bugging, and a GET request was the first way to getting it worked properly
+  * This is a GET request as post requests were bugging, and a GET request was the first way to getting it worked properly  
+
+**Look at `sample/readme.md` for sample API code**
 
 # Changelog
 Note: Backend code isn't available, however changes are documented
 
 <details>
   <summary>Beta</summary>
+  
+  ### Beta 0.3 (26/07/2023)
+  #### Frontend
+  * Removed the two CSS files and replaced them with one `index.css` file
+  * Changed the frequency of how often the API was requested from one second to two seconds to reduce stress on the server
+  * Renamed `manifest.json` to `site.webmanifest`
+  * Renamed `short_name` in manifest file to **Clicker App** to meet 12 character recommendation
+
+  #### Backend
+  * No changes. Version 1.0 will address >20 second response times
 
   ### Beta 0.2 (02/06/2023)
   String: Version 0.2-20230701

@@ -1,6 +1,7 @@
 // Variables
 $background-color_1: black;
 $background-color_2: rgb(181, 252, 94);
+$background-color_3: rgb(97, 218, 251);
 
 $color_1: white;
 $color_2: #61dafb;
@@ -46,15 +47,17 @@ button {
 	font-size: 1em;
 	transition-duration: 0.5s;
 	font-weight: bolder;
+	cursor: url(cursor.svg), auto;
 	&:hover {
+		background-color: $background-color_3;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(255,255,255,0.19);
-		cursor: pointer;
 		transition-duration: 0.5s;
+		cursor: url(pointer.svg), auto;
 	}
 }
 
 small {
-	font-size: 1vh;
+	font-size: 1.2vh;
 	position: fixed;
 	bottom: 0;
 }
@@ -64,6 +67,7 @@ body {
 	font-family: $font-family_1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	user-select: none;
 }
 
 code {
@@ -76,5 +80,5 @@ code {
 }
 
 a {
-	color: white;
+	color: $color_1;
 }

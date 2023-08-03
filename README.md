@@ -1,5 +1,8 @@
 # GlobalClicker
-[Click here to play](https://gc.galvindev.me.uk)
+[Click here to play](https://gc.galvindev.me.uk)  
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fgc.galvindev.me.uk&style=for-the-badge&label=Website) ![API](https://img.shields.io/website?url=https%3A%2F%2Fapi-gc.galvindev.me.uk&style=for-the-badge&label=API)  
+![Website Version](https://img.shields.io/badge/Website%20Version%3A-1.0%20(Upcoming%201)-blue?style=for-the-badge) <!-- ![API Version](https://img.shields.io/badge/API%20Version%3A-Version-blue?style=for-the-badge) -->
+
 
 # API Endpoints
 There are currently only two supported endpoints, however more are to be developed:
@@ -12,7 +15,22 @@ There are currently only two supported endpoints, however more are to be develop
 # Changelog
 Note: Backend code isn't available, however changes are documented
 
+### Version 1.0 (Upcoming)
+#### Backend
+* No issues fixed, but there will be changes made
+
+#### Frontend
+* Button hover colour is now blue, rather than staying green. However it will remain green when you're not hovering
+* Added pointer when hovering on button
+* Can no longer select text
+* Renamed odometer.css
+* Made small text more readable on smaller devices
+* `index.html`: root is now main rather than div
+* Added accessability
+
 <details>
+
+  
   <summary>Beta</summary>
   
   ### Beta 0.3 (26/07/2023)

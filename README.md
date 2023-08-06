@@ -27,10 +27,10 @@ Note: Backend code isn't available, however changes are documented
 * Made small text more readable on smaller devices
 * `index.html`: root is now main rather than div
 * Added accessability
+* Added light mode
+* Restructured folders
 
 <details>
-
-  
   <summary>Beta</summary>
   
   ### Beta 0.3 (26/07/2023)

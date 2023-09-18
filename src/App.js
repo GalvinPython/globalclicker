@@ -9,7 +9,7 @@ function App() {
     let rows;
     let loaded = false;
     console.log("Script running!")
-    async function getData() {
+    function getData() {
       fetch('https://api-gc.galvindev.me.uk/clicks', { method: 'GET' })
         .then(function (response) {
           if (response.ok) return response.json();
@@ -27,9 +27,7 @@ function App() {
       setValue(rows)
     }
     getData();
-    const interval = setInterval(() => {
-      getData()
-    }, 2000)
+    const interval = setInterval(getData, 2000)
     return () => clearInterval(interval)
   }, [])
 

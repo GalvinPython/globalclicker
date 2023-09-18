@@ -17,7 +17,7 @@ function App() {
         })
         .then(function (data) {
           rows = data[0].row_count
-          if (loaded == false) setValue(rows)
+          if (loaded === false) setValue(rows)
           loaded = true;
         })
         .catch(function (error) {
@@ -58,7 +58,7 @@ function App() {
           <Odometer value={value} format='(,ddd),dd' style={{ fontWeight: "bold", whiteSpace: "nowrap", overflow: "hidden" }} title='Clicks / Count' />
         </div>
         <button onClick={sendReq}>+1 Click</button>
-        <small title='This is a beta version to test everything works. Compiled on 26th July 2023'>Version 0.3-20230726 (BETA) | <Anchor>View Source</Anchor></small>
+        <small title='This is a beta version to test everything works. Built on 18th September 2023'>Version 0.3.1-20230918 (BETA) | <Anchor>View Source</Anchor></small>
       </header>
     </div>
   );

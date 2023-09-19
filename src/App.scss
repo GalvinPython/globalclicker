@@ -1,6 +1,9 @@
 // Variables
 $background-color_1: black;
 $background-color_2: rgb(181, 252, 94);
+$background-color_3: rgb(97, 218, 251);
+$background-color_4: white;
+$background-color_5: #222;
 
 $color_1: white;
 $color_2: #61dafb;
@@ -12,7 +15,7 @@ $font-family_2: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospa
 // Main Content
 .App {
 	text-align: center;
-	cursor: url(cursor.svg), auto;
+	cursor: url(svg/cursor.svg), auto;
 }
 .App-logo {
 	height: 20vmin;
@@ -27,6 +30,17 @@ $font-family_2: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospa
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: $color_1;
+	a {
+		color: $color_1;
+	}
+
+	&.light {
+		background-color: $background-color_4;
+		color: $color_3;
+		a {
+			color: $color_3;
+		}
+	}
 }
 .App-link {
 	color: $color_2;
@@ -46,17 +60,13 @@ button {
 	font-size: 1em;
 	transition-duration: 0.5s;
 	font-weight: bolder;
+	cursor: url(svg/cursor.svg), auto;
 	&:hover {
+		background-color: $background-color_3;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(255,255,255,0.19);
-		cursor: pointer;
 		transition-duration: 0.5s;
+		cursor: url(pointer.svg), auto;
 	}
-}
-
-small {
-	font-size: 1vh;
-	position: fixed;
-	bottom: 0;
 }
 
 body {
@@ -64,10 +74,14 @@ body {
 	font-family: $font-family_1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	user-select: none;
 }
 
 code {
 	font-family: $font-family_2;
+	font-size: 1.2vh;
+	position: fixed;
+	bottom: 0;
 }
 
 .odometer {
@@ -75,6 +89,23 @@ code {
 	font-size: 10vw;
 }
 
-a {
-	color: white;
+.App-settings {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+.App-icons {
+	background-color: $background-color_5;
+	border-radius: 50%;
+	width: 5vw;
+	height: 5vw;
+	margin-top: 10px;
+	cursor: not-allowed !important; // TODO: Remove once functionality has been implemented
+	> img {
+		text-align: center;
+		vertical-align: center;
+		width: 3vw;
+		margin-top: 1vw;
+		pointer-events: none;
+	}
 }

@@ -1,16 +1,14 @@
 # GlobalClicker
 [Click here to play](https://gc.galvindev.me.uk)  
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fgc.galvindev.me.uk&style=for-the-badge&label=Website) ![API](https://img.shields.io/website?url=https%3A%2F%2Fapi-gc.galvindev.me.uk&style=for-the-badge&label=API)  
-![Website Version](https://img.shields.io/badge/Website%20Version%3A-1.0%20(Upcoming%201)-blue?style=for-the-badge) <!-- ![API Version](https://img.shields.io/badge/API%20Version%3A-Version-blue?style=for-the-badge) -->
+![Website Version](https://img.shields.io/badge/Website%20Version%3A-1.0%20(Upcoming%201)-blue?style=for-the-badge)
 
+# Note
+The current contents of the upcoming branch are to be replaced with a new, more improved version. This branch exists to stop git complaining and why everything is a mess
 
 # API Endpoints
-There are currently only two supported endpoints, however more are to be developed:
+These are the currently working endpoints, however more are to be developed:
 * /clicks - Get the number of clicks **(GET)**
-* /clicked - Add another number to the clicks total **(GET)**
-  * This is a GET request as post requests were bugging, and a GET request was the first way to getting it worked properly  
-
-<!-- **Look at `sample/readme.md` for sample API code** -->
 
 # Changelog
 Note: Backend code isn't available, however changes are documented
@@ -33,6 +31,10 @@ Note: Backend code isn't available, however changes are documented
 <details>
   <summary>Beta</summary>
   
+  ### Beta 0.3.1 (18/09/2023)
+  #### Frontend
+  * Fixed loading time "bug" (thanks Nia)
+
   ### Beta 0.3 (26/07/2023)
   #### Frontend
   * Removed the two CSS files and replaced them with one `index.css` file

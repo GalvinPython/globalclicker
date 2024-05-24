@@ -60,12 +60,11 @@ button {
 	font-size: 1em;
 	transition-duration: 0.5s;
 	font-weight: bolder;
-	cursor: url(svg/cursor.svg), auto;
+	cursor: pointer;
 	&:hover {
 		background-color: $background-color_3;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(255,255,255,0.19);
 		transition-duration: 0.5s;
-		cursor: url(pointer.svg), auto;
 	}
 }
 
@@ -77,35 +76,18 @@ body {
 	user-select: none;
 }
 
-code {
-	font-family: $font-family_2;
-	font-size: 1.2vh;
-	position: fixed;
-	bottom: 0;
-}
-
 .odometer {
 	min-width: 90vw;
 	font-size: 10vw;
 }
 
-.App-settings {
-	position: absolute;
-	top: 0;
-	right: 10px;
+small {
+	bottom: 5px;
+	position: fixed;
+	margin: auto;
+	text-decoration: none;
 }
-.App-icons {
-	background-color: $background-color_5;
-	border-radius: 50%;
-	width: 5vw;
-	height: 5vw;
-	margin-top: 10px;
-	cursor: not-allowed !important; // TODO: Remove once functionality has been implemented
-	> img {
-		text-align: center;
-		vertical-align: center;
-		width: 3vw;
-		margin-top: 1vw;
-		pointer-events: none;
-	}
+
+a {
+	text-decoration: none;
 }
